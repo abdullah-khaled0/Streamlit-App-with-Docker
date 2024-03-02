@@ -1,0 +1,8 @@
+services:
+  app:
+    build: .
+    ports:
+      - "8501:8501"
+    volumes:
+      - ./requirements.txt:/app/requirements.txt
+    command: streamlit run app.py
